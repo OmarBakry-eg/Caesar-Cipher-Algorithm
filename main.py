@@ -1,7 +1,8 @@
 #A python program to illustrate Caesar Cipher Technique 
+
+#Encryption
 def encrypt(text,s): 
     result = "" 
-
     # traverse text 
     for i in range(len(text)): 
         char = text[i] 
@@ -15,9 +16,10 @@ def encrypt(text,s):
             result += chr((ord(char) + s - 97) % 26 + 97) 
   
     return result 
+
+#Decryption
 def decrypt(text,s): 
     result = "" 
-  
     # traverse text 
     for i in range(len(text)): 
         char = text[i] 
